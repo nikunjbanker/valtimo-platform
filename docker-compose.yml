@@ -21,6 +21,8 @@ services:
             - POSTGRES_USER=openzaak 
             - POSTGRES_PASSWORD=openzaak 
             - POSTGRES_DB=openzaak
+        ports: 
+            - 5432:5432
     valtimo_openzaak_redis:
         image: redis
         container_name: valtimo_openzaak_redis
